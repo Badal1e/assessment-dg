@@ -1,9 +1,7 @@
-FROM public.ecr.aws/lambda/python:3.10
+FROM public.ecr.aws/lambda/python:3.9
 
-COPY requirements/.txt .
-
-# from official docs i found lambdas task root
-RUN pip install -r requirements.txt -t /var/task
+COPY requirements.txt /var/task
+RUN pip install -r requirements.txt
 
 COPY app.py /var/task
 
