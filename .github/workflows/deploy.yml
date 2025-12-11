@@ -11,7 +11,7 @@ env:
   AWS_REGION: ap-south-1                   
   AWS_ACCOUNT_ID: 502497380721            
   ECR_REPOSITORY: datagrokr-intern-devops          
-  LAMBDA_FUNCTION_NAME: EventMonitoringFunction  
+  LAMBDA_FUNCTION_NAME: EventMonitoringContainerFunction  
 
 jobs:
   deploy:
